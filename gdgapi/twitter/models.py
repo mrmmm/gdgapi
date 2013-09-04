@@ -6,3 +6,6 @@ class Tweet(models.Model):
     time_created = models.DateTimeField(auto_now_add=True)
     time_modified = models.DateTimeField(auto_now=True)
 
+    def __unicode__(self):
+        return unicode(self.tweet)
+
